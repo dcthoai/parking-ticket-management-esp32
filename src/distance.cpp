@@ -22,7 +22,7 @@ float measureDistance() {
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
 
-  duration = pulseIn(echoPin, HIGH, 30000); // Timeout to avoid hanging if no response
+  duration = pulseIn(echoPin, HIGH, 60000); // Timeout to avoid hanging if no response
   return duration * SOUND_SPEED / 2;
 }
 

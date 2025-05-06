@@ -15,7 +15,7 @@ void motorOpen() {
     BLOCK_READ_NFC = true;
     HAS_PERSON = false;
     IS_PERSON_DETECTED = false;
-    myServo.write(180);
+    myServo.write(90);
     Serial.println("Mở cửa");
     notifyLCD("OPEN DOOR");
 }

@@ -94,8 +94,9 @@ void handleAction(int action, String message) {
 
             break;
         case READ_TICKET_ACTIVE:
-            ACCEPT_CARD = true;
             motorOpen();
+            delay(750);
+            ACCEPT_CARD = true;
             break;
         case READ_TICKET_LOCKED:
             notifyLCD("Card locked!");
